@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/top"
+            android:layout_marginTop="@dimen/top"
+            android:layout_marginRight="@dimen/top"
+            android:drawableStart="@drawable/ic_username"
+            android:hint="@string/username" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username"
+            android:layout_marginLeft="@dimen/top"
+            android:layout_marginRight="@dimen/top"
+            android:drawableStart="@drawable/ic_password"
+            android:hint="@string/password" />
+
+        <TextView
+            android:id="@+id/iconos"
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password"
+            android:layout_marginStart="@dimen/top"
+            android:layout_marginLeft="@dimen/top"
+            android:layout_marginTop="@dimen/one"
+            android:drawableStart="@drawable/ic_happy"
+            android:drawableEnd="@drawable/ic_security"
+            android:drawableTop="@drawable/ic_username"
+
+            />
+
+        <Button
+            android:id="@+id/sign"
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iconos"
+            android:layout_marginStart="@dimen/top"
+            android:layout_marginTop="@dimen/top"
+            android:background="#e763dc"
+            android:text="@string/signIn"
+            android:textColor="#FFF"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/registrar"
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sign"
+            android:layout_marginStart="@dimen/top"
+            android:layout_marginTop="@dimen/one"
+            android:background="#e763dc"
+            android:text="@string/Regi"
+            android:textColor="#FFF"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/registrar"
+            android:layout_marginStart="@dimen/top"
+            android:layout_marginTop="@dimen/one"
+            android:text="@string/pass"
+            android:textAlignment="center" />
+
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
